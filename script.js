@@ -1,8 +1,9 @@
 //Récupération des éléments importants
 const cardsContainer = document.querySelector(".todoCards");
 const addTaskBtn = document.querySelector("#btn");
+const task_count = document.querySelector("#task_count");
 
-
+updateCounter()
 addTaskBtn.addEventListener("click", alsoGenerateCard);
 //addTaskBtn.addEventListener("click", generateCard);
 
@@ -30,6 +31,13 @@ function generateCard(){
     })
 
     cardsContainer.appendChild(todoCard);
+    updateCounter()
+}
+
+//Update Compteur
+function updateCounter(){
+    const taskNb = document.querySelectorAll(".task").length;
+    task_count.textContent = taskNb;
 }
 
 
@@ -44,9 +52,11 @@ function alsoGenerateCard(){
         </span>
     </div>
     `);
+    updateCounter()
 
 }
 
 function removeElement(e){
     e.parentNode.remove();
+    updateCounter()
 }

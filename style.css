@@ -1,15 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 100px;
+    position: relative;
+}
+
+body h1{
+    font-size: 3em;
+}
+
+#task_count{
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: rgb(105, 186, 226);
+    border-radius: 50vw;
+    position: absolute;
+    top: -22px;
+    right: -37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+
 #todo{
     width: fit-content;
+    max-width: 78vw;
 }
 
 #btn{
     width: 100%;
-    margin-bottom: 15px;
+    margin-block: 15px;
+    padding: 10px 15px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 .todoCards{
     display: flex;
     gap: 10px;
+    max-width: 80vw;
+    flex-wrap: wrap;
 }
 
 .todoCard{
