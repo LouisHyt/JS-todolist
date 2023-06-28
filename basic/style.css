@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    margin-top: 100px;
+    position: relative;
+}
+
+body h1{
+    font-size: 3em;
+}
+
+body p span {
+    font-weight: bold;
+}
+
+
+#todo{
+    width: fit-content;
+    max-width: 78vw;
+}
+
+#btn{
+    width: 100%;
+    margin-block: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.todoCards{
+    display: flex;
+    gap: 10px;
+    max-width: 80vw;
+    flex-wrap: wrap;
+}
+
+.todoCard{
+    position: relative;
+    width: fit-content;
+}
+
+.task{
+    resize: none;
+}
+
+
+.delBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delBtn:hover{
+    color: rgb(179, 25, 25);
+}
